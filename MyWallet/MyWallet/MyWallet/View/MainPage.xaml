@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyWallet"
+             x:Class="MyWallet.MainPage"            >
+    <ScrollView  Orientation = "Vertical" VerticalOptions="StartAndExpand" IsEnabled="{Binding IsScrollEnabled}">
+        <StackLayout Padding="10" Spacing="10"  Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <Label Text="{Binding DisplayMessage}" />
+            <Label Text="Card #" />
+            <Entry Text="{Binding CardNo}" Placeholder="Please enter card#"></Entry>
+
+            <Label Text="Card Type" />
+            <Entry Text="{Binding CardType}" Placeholder="Please enter card type"></Entry>
+            <StackLayout Orientation="Horizontal" Spacing="10">
+                <Label Text="Premium"></Label>
+                <Switch IsToggled="{Binding IsPremium}"></Switch>
+            </StackLayout>
+            <Label Text="Card Service Provider" />
+            <Entry Text="{Binding CardServiceProvider}" Placeholder="Please enter service provider"></Entry>
+
+            <Label Text="Card Holder Name" />
+            <Entry Text="{Binding CardHolderName}" Placeholder="Please enter card holder name"></Entry>
+
+            <Label Text="Card Spend Limit" />
+            <Entry Text="{Binding CardSpendLimit}" Placeholder="Please enter card spend limit"></Entry>
+            <Button Text="Add Card" Command="{Binding SaveCardCommand}"></Button>
+            <Button Text="My Saved Cards" Command="{Binding ListCardsCommand}"></Button>
+            <StackLayout Orientation="Horizontal" Spacing="10">
+                <Label Text="Active"></Label>
+                <Switch IsToggled="{Binding IsActive}"></Switch>
+                <Label Text="Executing"></Label>
+                <Switch IsToggled="{Binding IsExecuting}"></Switch>
+            </StackLayout>
+            <ActivityIndicator x:Name="activityIndicator" IsRunning="{Binding IsExecuting}"></ActivityIndicator>            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
