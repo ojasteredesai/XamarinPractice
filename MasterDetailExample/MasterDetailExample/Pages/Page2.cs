@@ -11,7 +11,7 @@ namespace MasterDetailExample.Pages
 			Content = new StackLayout
 			{
 				Children = {
-					new Label { Text = "Page 2 - Rajveer Raja Rajveer RajaRajveer RajaRajveer RajaRajveer RajaRajveer RajaRajveer RajaRajveer RajaRajveer Raja" }
+					new Label { Text = "Page 2" }
 				}
 			};
 		}

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinLearingApp.ResourceSharingPage">    <StackLayout>
+        <Label>Ojas</Label>
+        <Button Text=" Carpe diem ">
+            <Button.HorizontalOptions>
+                <DynamicResourceExtension Key="horzOptions" />
+            </Button.HorizontalOptions>
+            <Button.VerticalOptions>
+                <DynamicResourceExtension Key="vertOptions" />
+            </Button.VerticalOptions>
+            <Button.BorderWidth>
+                <DynamicResourceExtension Key="borderWidth" />
+            </Button.BorderWidth>
+            <Button.TextColor>
+                <DynamicResourceExtension Key="textColor" />
+            </Button.TextColor>
+            <Button.BackgroundColor>
+                <DynamicResourceExtension Key="backgroundColor" />
+            </Button.BackgroundColor>
+            <Button.BorderColor>
+                <DynamicResourceExtension Key="borderColor" />
+            </Button.BorderColor>
+            <Button.FontSize>
+                <DynamicResourceExtension Key="fontSize" />
+            </Button.FontSize>
+        </Button>
+        <Button Text=" Sapere aude "
+ HorizontalOptions="{DynamicResource Key=horzOptions}"
+ VerticalOptions="{DynamicResource Key=vertOptions}"
+ BorderWidth="{DynamicResource Key=borderWidth}"
+                TextColor="{DynamicResource Key=textColor}"
+ BackgroundColor="{DynamicResource Key=backgroundColor}"
+ BorderColor="{DynamicResource Key=borderColor}"
+ FontSize="{DynamicResource Key=fontSize}" />
+        <Button Text=" Discere faciendo "
+ HorizontalOptions="{DynamicResource horzOptions}"
+ VerticalOptions="{DynamicResource vertOptions}"
+ BorderWidth="{DynamicResource borderWidth}"
+ TextColor="{DynamicResource textColor}"
+ BackgroundColor="{DynamicResource backgroundColor}"
+ BorderColor="{DynamicResource borderColor}"
+ FontSize="{DynamicResource fontSize}" />
+    </StackLayout>
+</ContentPage>

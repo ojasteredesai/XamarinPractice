@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinLearingApp.MainPage">
+
+    <ScrollView Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand">
+            <Label Text="Welcome to Xamarin Forms!" 
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" />
+            <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand"  Orientation="Vertical">            
+                <Button Text="Chapter-6-ButtonLambdasPage" StyleId="lamdapage" Clicked="OnButtonClick" ></Button>
+                <Button Text="Chapter-6-ButtonLambdasPageXaml" StyleId="lambdaspagexaml" Clicked="OnButtonClick" ></Button>
+                <Button Text="Chapter-6-ButtonLoggerPage" StyleId="loggerpage" Clicked="OnButtonClick" ></Button>
+                <Button Text="Chapter-7-FormattedTextPage" StyleId="FormattedTextPage" Clicked="OnButtonClick" ></Button>
+                <Button Text="Chapter-7-ScaryColorListPage" StyleId="ScaryColorListPage" Clicked="OnButtonClick" ></Button>
+                <Button Text="Chapter-7-SimplestKeypadPage" StyleId="SimplestKeypadPage" Clicked="OnButtonClick" ></Button>
+                <Button Text="Chapter-8-FactoryMethodDemoPage" StyleId="FactoryMethodDemoPage" Clicked="OnButtonClick" ></Button>
+                <Button Text="Chapter-6-ParameteredConstructorDemoPage" StyleId="ParameteredConstructorDemoPage" Clicked="OnButtonClick" ></Button>
+                <Button Text="Chapter-8-XamlClockPage" StyleId="XamlClockPage" Clicked="OnButtonClick" ></Button>
+                <Button Text="Chapter-8-PlatformSpecificLabelsPage" StyleId="PlatformSpecificLabelsPage" Clicked="OnButtonClick" ></Button>
+                <Button Text="Chapter-8-ColorViewListPage" StyleId="ColorViewListPage" Clicked="OnButtonClick" ></Button>
+                <Button Text="Chapter-8-XamlKeypadPage" StyleId="XamlKeypadPage" Clicked="OnButtonClick" ></Button>
+                <Button Text="Chapter-8-TapGestureFirstDemo" StyleId="TapGestureFirstDemo" Clicked="OnButtonClick" ></Button>
+                <Button Text="Chapter-8-XmalTapGestureFirstDemo" StyleId="XmalTapGestureFirstDemo" Clicked="OnButtonClick" ></Button>
+                <Button Text="RestService-LoginWebServicePage" StyleId="LoginWebServicePage" Clicked="OnButtonClick" ></Button>
+                <Button Text="Chapter-10-SharedStaticsPage" StyleId="SharedStaticsPage" Clicked="OnButtonClick" ></Button>
+                <Button Text="Chapter-10-SystemStaticsPage" StyleId="SystemStaticsPage" Clicked="OnButtonClick" ></Button>
+                <Button Text="Chapter-10-ResourceSharingPage" StyleId="ResourceSharingPage" Clicked="OnButtonClick" ></Button>
+                <Button Text="Chapter-10-ResourceTreesPage" StyleId="ResourceTreesPage" Clicked="OnButtonClick" ></Button>
+                <Button Text="Chapter-11-DynamicVsStaticCodePage" StyleId="DynamicVsStaticCodePage" Clicked="OnButtonClick" ></Button>
+                <Button Text="Chapter-11-TextBoxResizePage" StyleId="TextBoxResizePage" Clicked="OnButtonClick" ></Button>
+                <Button Text="Chapter-11-BaskervillesCountPage" StyleId="BaskervillesCountPage" Clicked="OnButtonClick" ></Button>
+                <Button Text="Chapter-12-BasicStylePage" StyleId="BasicStylePage" Clicked="OnButtonClick" ></Button>
+                <Button Text="Chapter-12-StyleInheritancePage" StyleId="StyleInheritancePage" Clicked="OnButtonClick" ></Button>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

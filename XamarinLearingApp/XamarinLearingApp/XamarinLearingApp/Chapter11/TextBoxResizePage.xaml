@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit= "clr-namespace:XamarinLearingApp;assembly=XamarinLearingApp"
+             x:Class="XamarinLearingApp.TextBoxResizePage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                                     iOS="5, 20, 0, 0"
+                                     Android="5, 0, 0, 0"
+                                     WinPhone="5, 0, 0, 0" />
+    </ContentPage.Padding>
+    <StackLayout x:Name="stackLayout" WidthRequest="200">
+        <toolkit:AltEntry BackgroundColor="LightBlue" ZCMobileText="Text of 4 points"/>
+        <toolkit:AltEntry BackgroundColor="LightBlue"  ZCMobileText="Text of 5 points 1"/>
+        <toolkit:AltEntry BackgroundColor="LightBlue"   ZCMobileText="Text of 6 points 11"/>
+        <toolkit:AltEntry BackgroundColor="LightBlue"  ZCMobileText="Text of 7 points 111"/>
+        <toolkit:AltEntry BackgroundColor="LightBlue" ZCMobileText="Text of 8 points 1111"/>
+        <toolkit:AltEntry BackgroundColor="LightBlue" ZCMobileText="Text of 9 points 11111"/>
+        <toolkit:AltEntry BackgroundColor="LightBlue" ZCMobileText="Text of 10 points 11111" />
+        <toolkit:AltEntry BackgroundColor="LightBlue" ZCMobileText="Text of 11 points 111111" />
+        <toolkit:AltEntry BackgroundColor="LightBlue" ZCMobileText="Text of 12 points 1111111" />
+    </StackLayout>
+</ContentPage>

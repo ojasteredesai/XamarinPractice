@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinLearingApp.PlatformSpecificLabelsPage">
+    <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Padding="20" Spacing="5" BackgroundColor="Cyan">       
+        <StackLayout>
+            <OnPlatform x:TypeArguments="View">
+            <OnPlatform.iOS>
+                    <Label Text="This is not an optiomum approach as all labels will be initialized and content will be set as per platform. This is an IOS Device Text." HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Crimson"></Label>
+            </OnPlatform.iOS>
+            <OnPlatform.Android>
+                    <Label Text="This is not an optiomum approach as all labels will be initialized and content will be set as per platform. This is an Android Device Text." HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Crimson"></Label>
+            </OnPlatform.Android>
+        </OnPlatform>
+        </StackLayout>
+        <StackLayout>
+            <Label x:Name="DeviceLabel" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Yellow">
+                <Label.Text>
+                    <OnPlatform x:TypeArguments="x:String" Android="This is optimized way to display Android Device Text!!"
+                                iOS="This is optimized way to display IOS Device Text!!"
+                    />
+                </Label.Text>
+            </Label>
+        </StackLayout>
+    </StackLayout>    
+</ContentPage>
