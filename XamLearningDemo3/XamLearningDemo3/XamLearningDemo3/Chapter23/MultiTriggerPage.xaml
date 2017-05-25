@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamLearningDemo3.Chapter23.MultiTriggerPage"
+             xmlns:local="clr-namespace:XamLearningDemo3.Convertor">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:MultiTriggerConverter x:Key="dataHasBeenEntered" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+        <Entry Placeholder="enter job title">
+            <Entry.Triggers>
+                <Trigger TargetType="Entry"
+                 Property="Entry.IsFocused" Value="True">
+                    <Trigger.EnterActions>
+                        <local:FadeTriggerAction StartsFrom="0" />
+                     </Trigger.EnterActions>
+
+                    <Trigger.ExitActions>
+                        <local:FadeTriggerAction StartsFrom="1" />
+                    </Trigger.ExitActions>
+                        <!-- You can use both Enter/Exit and Setter together if required -->
+                </Trigger>
+            </Entry.Triggers>
+        </Entry>
+        <Entry x:Name="userID" Text=""></Entry>
+        <Entry x:Name="password" Text=""></Entry>
+        <Button x:Name="loginButton" Text="Login"
+        FontSize="Large"
+        HorizontalOptions="Center"
+        IsEnabled="false">
+
+            <Button.Triggers>
+                <MultiTrigger TargetType="Button">
+                    <MultiTrigger.Conditions>
+                        <BindingCondition Binding="{Binding Source={x:Reference userID},
+                              Path=Text.Length,
+                              Converter={StaticResource dataHasBeenEntered}}"
+                          Value="true" />
+                        <BindingCondition Binding="{Binding Source={x:Reference password},
+                              Path=Text.Length,
+                              Converter={StaticResource dataHasBeenEntered}}"
+                          Value="true" />
+                    </MultiTrigger.Conditions>
+                    <Setter Property="IsEnabled" Value="True" />
+                </MultiTrigger>
+            </Button.Triggers>
+        </Button>
+    </StackLayout>
+</ContentPage>

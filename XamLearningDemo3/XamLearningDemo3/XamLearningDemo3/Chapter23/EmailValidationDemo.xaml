@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamLearningDemo3.Chapter23.EmailValidationDemo"
+             xmlns:local="clr-namespace:XamLearningDemo3.Behaviors">
+
+    <StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Entry Placeholder="Enter email address" Keyboard="Email" HorizontalOptions="FillAndExpand">
+                <Entry.Behaviors>
+                    <local:ValidEmailBehavior x:Name="validEmail" />
+                </Entry.Behaviors>
+            </Entry>
+            <Entry Placeholder="Enter email address" Keyboard="Email" HorizontalOptions="FillAndExpand">
+                <Entry.Behaviors>
+                    <local:ValidEmailBehavior x:Name="validEmail1" />
+                </Entry.Behaviors>
+            </Entry>
+            <Label Text="{Binding Source={x:Reference validEmail}, Path=IsValid}"></Label>
+            <Label Text="{Binding Source={x:Reference validEmail1}, Path=IsValid}"></Label>
+        </StackLayout>
+        
+        <Button Text="Send!" FontSize="Large" HorizontalOptions="Center" IsEnabled="{Binding Source={x:Reference validEmail}, Path=IsValid}" />
+        <Button Text="Send!" FontSize="Large" HorizontalOptions="Center" IsEnabled="{Binding Source={x:Reference validEmail1}, Path=IsValid}" />
+    </StackLayout>
+</ContentPage>

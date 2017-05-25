@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamLearningDemo2"
+             x:Class="XamLearningDemo2.MainPage">
+
+    <ScrollView Orientation="Vertical" HorizontalOptions="StartAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand"  Orientation="Vertical">
+            <Button Text="Chapter-12-ImplicitStylePage" StyleId="ImplicitStylePage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-12-DynamicStylesPage" StyleId="DynamicStylesPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-14-AbsoluteLayoutPluralSitePage" StyleId="AbsoluteLayoutPluralSitePage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-14-AbsoluteDemoCodePage" StyleId="AbsoluteDemoCodePage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-14-AbsoluteDemoXamlPage" StyleId="AbsoluteDemoXamlPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-14-ChessboardFixedPage" StyleId="ChessboardFixedPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-14-ChessboardDynamicPage" StyleId="ChessboardDynamicPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-14-SimpleOverlayPage" StyleId="SimpleOverlayPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-15-SliderDemoPage" StyleId="SliderDemoPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-15-RgbSlidersPage" StyleId="RgbSlidersPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-15-SquareDesignerPage" StyleId="SquareDesignerPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-15-StepperDemoPage" StyleId="StepperDemoPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-16-OpacityBindingCodePage" StyleId="OpacityBindingCodePage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-16-BindingXamlPagePractice" StyleId="BindingXamlPagePractice" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-16-OpacityBindingXamlPage" StyleId="OpacityBindingXamlPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-16-WebViewDemoPage" StyleId="WebViewDemoPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-16-BindingPathDemosPage" StyleId="BindingPathDemosPage" Clicked="OnButtonClick" ></Button>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage> 

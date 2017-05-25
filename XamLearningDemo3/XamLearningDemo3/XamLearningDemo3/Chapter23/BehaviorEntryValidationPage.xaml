@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamLearningDemo3.Chapter23.BehaviorEntryValidationPage"
+             xmlns:local="clr-namespace:XamLearningDemo3.Behaviors">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Style.Behaviors>
+                    <local:NumericValidationBehavior />
+                </Style.Behaviors>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>    <StackLayout>
+        <Entry Placeholder="Enter a System.Double" />
+        <Entry Placeholder="Enter a System.Double" />
+        <Entry Placeholder="Enter a System.Double" />
+        <Entry Placeholder="Enter a System.Double" />
+    </StackLayout>
+</ContentPage>

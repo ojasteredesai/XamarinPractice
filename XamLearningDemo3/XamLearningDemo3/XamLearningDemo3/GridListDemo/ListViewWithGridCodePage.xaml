@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:XamLearningDemo3.GridListDemo"
+             x:Class="XamLearningDemo3.GridListDemo.ListViewWithGridCodePage">
+    <ContentPage.Content>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="33*" />
+            <ColumnDefinition Width="33*" />
+            <ColumnDefinition Width="33*" />
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="0"
+                    Command="{Binding AddImagesCommand}"
+                    Text="Add Item" />
+        <Button Grid.Column="1"
+                    Command="{Binding RemoveImagesCommand}"
+                    Text="Remove Item" />
+        <Button Grid.Column="2"
+                    Command="{Binding ChangeImageSourceCommand}"
+                    Text="Switch item source" />
+        <controls:GridView x:Name="GrdView"
+                               Grid.Row="1"
+                               Grid.ColumnSpan="3"
+                               ItemHeight="200"
+                               ItemWidth="152"
+                               ItemsSource="{Binding Employees}">
+            <controls:GridView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <Entry Grid.Row="1" Grid.Column="2" Text="test"/>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </controls:GridView.ItemTemplate>
+        </controls:GridView>
+    </Grid>
+    </ContentPage.Content>  
+</ContentPage>

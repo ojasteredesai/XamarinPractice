@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamLearningDemo3.Chapter23.StyledTriggersPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="AnchorX" Value="1" />
+                <Setter Property="BackgroundColor" Value="AliceBlue" />
+                <Style.Triggers>
+                    <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                        <Setter Property="Scale" Value="1.5" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout Spacing="20">
+        <Entry Placeholder="enter name"/>
+        <Entry Placeholder="enter address" />
+        <Entry Placeholder="enter city and state" />
+    </StackLayout>
+</ContentPage>

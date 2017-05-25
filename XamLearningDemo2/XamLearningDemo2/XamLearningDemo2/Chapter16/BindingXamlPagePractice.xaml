@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamLearningDemo2.Chapter16.BindingXamlPagePractice">
+    <StackLayout x:Name="ParentStack" Orientation="Vertical" BackgroundColor="Red">
+        <StackLayout x:Name="MainStack" Orientation="Horizontal" BackgroundColor="Gray">
+            <Label x:Name="label1" Text="Page1">
+            
+            </Label>
+            <Label x:Name="label2" Text="Page2"></Label>
+            <Label x:Name="label3" Text="Page3"></Label>
+        </StackLayout>
+        <ContentView x:Name="PageContainer" BackgroundColor="Yellow"></ContentView>
+    </StackLayout>
+</ContentPage>

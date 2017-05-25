@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamLearningDemo2.Chapter15.SquareDesignerPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="10, 20, 10, 10" Android="10, 0, 10, 10"  WinPhone="10, 0, 10, 10" />
+    </ContentPage.Padding>
+    <StackLayout>
+        <StackLayout.Resources>
+            <ResourceDictionary>
+                <Style TargetType="Slider">
+                    <Setter Property="Maximum" Value="50" />
+                </Style>
+                <Style TargetType="Label">
+                    <Setter Property="FontSize" Value="Large" />
+                    <Setter Property="HorizontalTextAlignment" Value="Center" />
+                </Style>
+            </ResourceDictionary>
+        </StackLayout.Resources>
+        <Slider x:Name="heighSlider" ValueChanged="OnSliderValueChanged" />        
+        <Slider x:Name="widthSlider" ValueChanged="OnSliderValueChanged" />
+
+        <BoxView x:Name="boxView" BackgroundColor="Gray" HeightRequest="10" WidthRequest="15"/>
+    </StackLayout>
+</ContentPage>

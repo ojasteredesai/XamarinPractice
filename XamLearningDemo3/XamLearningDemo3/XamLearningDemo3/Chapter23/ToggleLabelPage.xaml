@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamLearningDemo3.Chapter23.ToggleLabelPage"
+             xmlns:local="clr-namespace:XamLearningDemo3.Behaviors">
+    <StackLayout HorizontalOptions="StartAndExpand" Orientation="Vertical">
+    <Label Text="Paused"
+ FontSize="Large"
+ HorizontalOptions="Center"
+ VerticalOptions="Center">
+        <Label.Behaviors>
+            <local:ToggleBehavior x:Name="toggleBehavior" />
+        </Label.Behaviors>
+        <Label.Triggers>
+            <DataTrigger TargetType="Label"
+ Binding="{Binding Source={x:Reference toggleBehavior},
+ Path=IsToggled}"
+ Value="True">
+                <Setter Property="Text" Value="Playing" />
+            </DataTrigger>
+        </Label.Triggers>
+    </Label>
+
+        <BoxView BackgroundColor="Green" HeightRequest="25" WidthRequest="25">
+            <BoxView.Behaviors>
+                <local:ToggleBehavior x:Name="boxToggleBehavior"></local:ToggleBehavior>
+            </BoxView.Behaviors>
+            <BoxView.Triggers>
+                <DataTrigger TargetType="BoxView" Binding="{Binding Source={x:Reference boxToggleBehavior}, Path=IsToggled}" Value="True">
+                    <Setter Property="BackgroundColor" Value="Blue" />
+                </DataTrigger>
+            </BoxView.Triggers>
+        </BoxView>    
+    </StackLayout>
+</ContentPage>

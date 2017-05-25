@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamLearningDemo3"
+             x:Class="XamLearningDemo3.MainPage">
+    <ScrollView Orientation="Vertical" HorizontalOptions="StartAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand"  Orientation="Vertical">
+            <Button Text="Chapter-20-TextFileTryoutPage" StyleId="TextFileTryoutPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-17-SimpleGridDemoPage" StyleId="SimpleGridDemoPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-17-EmployeeGridPage" StyleId="EmployeeGridPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-17-ListViewWithGrid" StyleId="ListViewWithGrid" Clicked="OnButtonClick" ></Button> 
+            <Button Text="Chapter-17-ListViewWithGridCodePage" StyleId="ListViewWithGridCodePage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-17-CodeBindingPage" StyleId="CodeBindingPage" Clicked="OnButtonClick" ></Button> 
+            <Button Text="Chapter-17-CompareEmployeeGrid" StyleId="CompareEmployeeGrid" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-19-PickerDemoPage" StyleId="PickerDemoPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-19-PickerBindingPage" StyleId="PickerBindingPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-23-EntryPopPage" StyleId="EntryPopPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-23-StyledTriggersPage" StyleId="StyledTriggersPage" Clicked="OnButtonClick" ></Button> 
+            <Button Text="Chapter-23-EntrySwellPage" StyleId="EntrySwellPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-23-DataTriggerPage" StyleId="DataTriggerPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-23-EventTriggerPage" StyleId="EventTriggerPage" Clicked="OnButtonClick" ></Button> 
+            <Button Text="Chapter-23-MultiTriggerPage" StyleId="MultiTriggerPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-23-BehaviorEntryValidationPage" StyleId="BehaviorEntryValidationPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-23-EmailValidationDemo" StyleId="EmailValidationDemo" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-23-ToggleLabelPage" StyleId="ToggleLabelPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-23-FormattedTextTogglePage" StyleId="FormattedTextTogglePage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-23-RadioLabelsPage" StyleId="RadioLabelsPage" Clicked="OnButtonClick" ></Button> 
+            <Button Text="Chapter-23-EntryFormPage" StyleId="EntryFormPage" Clicked="OnButtonClick" ></Button>
+            <Button Text="Chapter-20-AlertLambdasPage" StyleId="AlertLambdasPage" Clicked="OnButtonClick" ></Button>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
