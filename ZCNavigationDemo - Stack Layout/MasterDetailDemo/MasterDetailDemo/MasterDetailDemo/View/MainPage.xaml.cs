@@ -34,7 +34,7 @@ namespace MasterDetailDemo
                 foreach (var data in zcnavigationData.ZCNavigationObjects)
                 {
                     // zcnavigatioItemStackLayout = new StackLayout{ Padding= new Thickness(5,3,0,0)};
-                    zcnavigatioItemStackLayout = new StackLayout { Padding = Device.OnPlatform<Thickness>(new Thickness(5, 1, 0, 0), new Thickness(5, 1, 0, 0), new Thickness(0)) };
+                    zcnavigatioItemStackLayout = new StackLayout();// { Padding = Device.OnPlatform<Thickness>(new Thickness(5, 1, 0, 0), new Thickness(5, 1, 0, 0), new Thickness(0)) };
 
                     foreach (var item in data.ZCObjectItems)
                     {

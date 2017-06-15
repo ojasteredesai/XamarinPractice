@@ -47,7 +47,7 @@ namespace MasterDetailDemo
         {
             //   var vMainLayout = new StackLayout { Padding = new Thickness(0, 2, 0, 2), HorizontalOptions = LayoutOptions.FillAndExpand };
             //  var vMainLayout = new StackLayout { Padding = new Thickness(0, 2, 0, 2), HorizontalOptions = LayoutOptions.FillAndExpand };
-            var vMainLayout = new StackLayout { Padding = Device.OnPlatform<Thickness>(new Thickness(0, 0, 0, 0), new Thickness(0, 1, 0, 1), new Thickness(0)), HorizontalOptions = LayoutOptions.FillAndExpand, Spacing = 3 };
+            var vMainLayout = new StackLayout();// { Padding = Device.OnPlatform<Thickness>(new Thickness(0, 0, 0, 0), new Thickness(0, 1, 0, 1), new Thickness(0)), HorizontalOptions = LayoutOptions.FillAndExpand, Spacing = 3 };
             var vFirst = true;
             if (dataSource != null)
             {
